@@ -1,0 +1,14 @@
+[Unit]
+Description=Whoami service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/podman start -a whoami
+ExecStop=/usr/bin/podman stop -t 10 whoami
+Restart=always
+KillMode=control-group
+TimeoutStopSec=10
+Delegate=yes
+
+[Install]
+WantedBy=default.target

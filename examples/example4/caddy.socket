@@ -19,5 +19,5 @@ SocketMode=0600
 [Install]
 WantedBy=sockets.target
 
-# For an exaplanation of systemd specifier "%t",
+# For an explanation of systemd specifier "%t",
 # see https://www.freedesktop.org/software/systemd/man/latest/systemd.unit.html
